@@ -169,7 +169,8 @@
 
     @extend %flex-center;
 
-    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
 
     @extend %btn-font;
     color: var(--third-text-color);
