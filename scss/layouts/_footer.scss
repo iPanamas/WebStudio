@@ -10,6 +10,7 @@
     @media screen and (min-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
     
     @media screen and (min-width: 1200px) {
@@ -27,7 +28,7 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-        width: 50%;
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -81,14 +82,14 @@
 
 
 .connect {
-    @media screen and (min-width: 768px) {
-        width: 50%;
-    }
+    margin-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
-        width: auto;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
     }
+    
 }
+
 
 .footer-text {
     text-align: center;
@@ -107,14 +108,6 @@
     }
 }
 
-.social--margin {
-    margin-bottom: 60px;
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
-    }
-}
-
 .social__icon--white {
     fill: #ffffff;
 }
@@ -126,11 +119,12 @@
 .subscribe{
     @media screen and (min-width: 768px) {
         width: 450px;
-        margin: 0 auto;
+        margin-top: 60px;
     }
 
     @media screen and (min-width: 1200px) {
         width: auto;
+        margin-top: 0;
         margin-right: 0;
         margin-left: 0;
     }
