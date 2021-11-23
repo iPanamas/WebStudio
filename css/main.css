@@ -817,7 +817,9 @@ a {
 
 .hero__title {
   margin: 0 auto;
+  margin-bottom: 30px;
   max-width: 360px;
+  font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
@@ -825,16 +827,9 @@ a {
   color: var(--third-text-color);
 }
 
-@media screen and (min-width: 480px) {
-  .hero__title {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero__title {
     max-width: 696px;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
   }
