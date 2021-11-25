@@ -70,19 +70,20 @@
 
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
-
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
     
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;  
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     @media screen and (min-width: 768px) {
-        width: 354px;
         margin: 15px;
         flex-basis: calc((100% - 60px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-        width: 370px;
         flex-basis: calc((100% - 90px) / 3);
     }
 }

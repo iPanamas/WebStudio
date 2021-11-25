@@ -1137,13 +1137,17 @@ a {
   border: 1px solid #EEEEEE;
 }
 
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    margin-bottom: 30px;
+  }
+  .portfolio__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    width: 354px;
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -1151,7 +1155,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    width: 370px;
     flex-basis: calc((100% - 90px) / 3);
   }
 }
@@ -1188,11 +1191,23 @@ a {
 
 .portfolio__overlay-text {
   position: absolute;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__overlay-text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__overlay-text {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio__box {
